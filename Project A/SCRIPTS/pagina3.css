@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #fff1ff;
+    overflow-x: hidden;
+  }
+  
+  
+  header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(/IMG/HEADER/headerbackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+      transition: top 0.3s;
+  
+   
+  }
+  
+  .navigation {
+
+    margin-bottom: 10px;
+  
+    
+  }
+  .navigation ul {
+    list-style: none;
+   
+    
+  }
+  
+  .navigation ul li {
+    display: inline; /* Faz com que os itens da lista fiquem em linha */
+    margin: 0 40px; /* Adiciona margem entre os itens */
+    text-decoration: none;
+  
+  
+  }
+  
+  .navigation a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-family: "DM Serif Display", sans-serif;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  
+  }
+  
+
+  .pag1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/IMG/pagina3/section1/backgroundS1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  .pag1 h1 {
+    display: block; /* Alterado para block para que fique acima do span */
+    margin-bottom: 10px; /* Espaçamento entre o h1 e o span */
+    position: relative; /* Para posicionar o span em relação ao h1 */
+    font-size: 70px;
+    font-family: "cinzel";
+}
+
+.pag1 h1::after {
+    content: "";
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Espessura da linha */
+    background-color: #ecb11f; /* Cor da linha */
+    z-index: 1; /* Para colocar a linha atrás do texto */
+}
+
+.pag1 h1 span {
+    display: block; /* Faz o span se comportar como um bloco */
+    margin-top: 15px; /* Espaçamento entre o h1 e o span */
+    font-size: 25px;
+    font-family: "DM Serif Display",sans-serif;
+}
+
+.pag2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  
+}
+
+.container-left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-de-texto{
+
+  display: flex;
+  flex-direction: column; /* Direção de coluna para alinhar os itens verticalmente */
+  width: 80%;
+  height: 70%;
+  border-left: 80px solid #ecb11f;
+  justify-content: center; /* Centraliza verticalmente os itens */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  padding-left: 20px;
+}
+
+
+.container-de-texto h1 {
+  margin: 10px 0; /* Espaçamento entre os elementos */
+  margin-bottom: 40px;
+  font-family: "cinzel";
+}
+
+.container-de-texto h1 span {
+  display: block; /* Faz o span se comportar como um bloco */
+  margin-top: 20px;
+  font-family: "Dm Serif Display"sans-serif;
+}
+
+.formulary-email{
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #09b595 0%, #01877e 50%, #09b595 100%);
+
+}
+.formulary-email form{
+  width: 80%;
+}
+
+
+
+.formulary-email h1 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+  font-family: "cinzel",sans-serif;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  font-family: "cinzel"sans-serif;
+}
+
+.form-group textarea{
+  height: 300x;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.pag3{
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(to bottom, #09b595 20%, #016d66 100% );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+}
+.pag3 h1{
+  font-family: "Dm Serif Display",sans-serif;
+
+}
+.mapa-container{
+  background-color: #ecb11f;
+  width: 80%;
+  height: 85%;
+  margin-bottom: 20px;
+  
+}
+ 
+
+footer{
+  background-image: url(/IMG/FOOTER/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  font-size: small;
+  font-family: "DM Serif Display",sans-serif;
+ }
+.image-footer{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+ .image-footer img {
+  max-width: 30px; /* Definindo uma largura máxima para as imagens */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 20px; /* Espaçamento entre as imagens */
+}
+ 
